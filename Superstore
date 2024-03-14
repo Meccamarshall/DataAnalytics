@@ -1,0 +1,44 @@
+#This project utilizes the following Superstore data:
+
+CREATE TABLE superstore (
+    item_id INTEGER PRIMARY KEY,
+    item_name TEXT,
+    category TEXT,
+    price DECIMAL(10, 2),
+    stock_quantity INTEGER,
+    average_rating DECIMAL(3, 2)
+);
+
+
+# Display item price from high to low 
+SELECT *
+FROM superstore
+ORDER BY price desc;
+
+# Display the average stock quantity
+SELECT AVG(stock_quantity)
+FROM superstore
+
+# Display the average ratings for all items in the electronic category.
+SELECT MAX(average_rating), item_name
+FROM superstore
+WHERE category = "Electronics"
+GROUP BY item_name
+ORDER BY MAX (average_rating) desc
+
+# Display stock quantity from high to low for all items in the Electronics category
+SELECT item_name, stock_quantity, price, category
+FROM superstore
+WHERE category = "Electronics"
+ORDER BY stock_quantity desc;
+
+# Display the maximum item price.
+SELECT MAX(price)
+FROM superstore
+
+# Display the highest average rating from high to low for all items in the Kitchen Supplies category
+SELECT MAX(price), item_name
+FROM superstore
+WHERE category = "Kitchen Supplies"
+GROUP BY item_name
+ORDER BY MAX (average_rating) desc
