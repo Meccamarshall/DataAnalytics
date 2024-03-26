@@ -1,5 +1,4 @@
 # The project was written using the PostgreSQL dialect and utilized data from the following two Netflix datasets:
-
 CREATE TABLE netflix_titles_info
     ("show_id" varchar(5), "type" varchar(7), "title" varchar(58), "country" varchar(74), "date_added" timestamp, "release_year" int, "rating" varchar(5), "duration" varchar(9), "listed_in" varchar(74))
 ;
