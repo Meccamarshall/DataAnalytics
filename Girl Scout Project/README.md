@@ -1,20 +1,23 @@
-# Project Overview 🍪
+# Girl Scout Cookie Sales Analysis 🍪
 
-Who doesn't love Girl Scout cookies? This project dives into the delicious world of cookie sales, where I created and cleaned a custom dataset to answer 20 of the biggest questions about what makes these treats sell like hotcakes! Here’s a taste of the journey so far:
+Who doesn’t love Girl Scout cookies? This project dives into the world of cookie sales with a custom dataset I created and cleaned to answer 20 critical questions behind what makes these treats sell like hotcakes! Here’s a look at the journey:
 
-### Project Files
+## Project Files
 - **Dataset**: [Cookie Sales CSV](https://github.com/Meccamarshall/DataAnalytics/blob/main/Girl%20Scout%20Project/Cookie_sales.csv)
 - **SQL Analysis**: [Girl Scout Analysis SQL File](https://github.com/Meccamarshall/DataAnalytics/blob/main/Girl%20Scout%20Project/SQL)
 
-### Data Creation and Cleanup 🧹
-After generating the initial dataset, I rolled up my sleeves to clean it up, scrubbing duplicate entries, ensuring each cookie name was correct (because "ThinMints" or "Thin Mints"? Only one can rule!), and tidying up dates so every crumb was in the right place.
+## Data Creation and Cleanup 🧹
+After generating the initial dataset, I scrubbed duplicate entries, standardized cookie names (Thin Mints vs. “ThinMints”—only one version allowed!), and ensured dates were tidy for accurate analysis.
 
-### Cookie Sleuthing with SQL 🔍
+## Cookie Insights with SQL 🔍
 
-- **Mixing up Functions**: We whipped up `SUM`s and `AVG`s to uncover total and average sales insights (spoiler: Thin Mints took the lead!).
-- **Top Region and Cookie Rankings 🏆**: With window functions, we crowned the **Northeast** as the top region, boasting the highest number of orders at **1,362 units**, with **Thin Mints** reigning as the top cookie.
+- **Sales Functions**: Leveraged `SUM` and `AVG` functions to reveal total and average sales, uncovering key insights like Thin Mints’ top-seller status.
+- **Region and Cookie Rankings 🏆**: Using window functions, I highlighted the **Northeast** as the top region in terms of order volume, with **Thin Mints** leading in total sales.
 
-## Tasty Takeaways
+## Key Takeaways
 
-- 🍫 **All Hail Thin Mints!** They reign supreme as the best-selling cookie, with peak cravings (and sales!) around the holidays.
-- **Northeast Knows Best**: The Northeast region topped the charts with the highest number of orders.
+- 🍫 **Regional Sales Leader**: The **Southeast** had the highest total sales amount, coming in at **$115,866**.
+- 🍪 **Most Popular Cookie Variety**: **Thin Mints** led by a significant margin with a total sales amount of **$84,132**.
+- 📊 **Average Sales Amount per Sale**: Sales averaged **$33.32** per transaction.
+- 🏪 **Top Sales Channel**: The **Booth** channel had the highest number of transactions, totaling **3,368**.
+- 🌟 **Top Troop Leader**: **Lily** from Troop **9042** achieved the highest total sales amount.
